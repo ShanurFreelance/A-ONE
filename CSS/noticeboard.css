@@ -1,0 +1,90 @@
+.table{
+    display: flex;
+    justify-content: center;
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
+    
+}
+
+table thead tr {
+    background-color: #5e4031;
+    color: #ffffff;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+.download-btn {
+    background-color: #5e4031;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.view-more-btn {
+    display: block;
+    background-color: #5e4031;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+   
+
+    table thead tr {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 15px;
+        font-weight: bold;
+    }
+}
