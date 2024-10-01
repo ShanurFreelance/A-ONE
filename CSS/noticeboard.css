@@ -88,3 +88,51 @@ table tbody tr:nth-of-type(odd) {
         font-weight: bold;
     }
 }
+
+
+/* Marquee CSS */
+  .marquee-container {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 13s linear infinite;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+.marquee-content a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100vw); /* Start from right end */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to left end */
+    }
+}
+
+/* Glamorizing new icon */
+.new-icon {
+    color: red;
+    font-weight: bold;
+    font-size: 7px;
+    animation: blink .5s infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.1;
+    }
+}
