@@ -1,6 +1,6 @@
 .container {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .contact-button {
@@ -87,4 +87,20 @@ input[type="submit"]:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.message-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+.message-block .message{
+    color: #5e4031;
+    font-size: 50px;
+}
+.message-block div{
+    color: gray;
+    padding-top: 30px;
 }
