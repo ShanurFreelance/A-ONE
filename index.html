@@ -235,7 +235,7 @@
         <div class="card-text">
           <h3>Healthcare Sector</h3>
           <p>Enhance your skills with practical, on-the-job experience in your chosen field.</p>
-
+          <button onclick="openModal('modal1')">View More</button>
         </div>
         <img class="img" src="/Images/product.jpg" alt="On the Job Training">
       </div>
@@ -244,7 +244,7 @@
         <div class="card-text">
           <h3>Construction Industry</h3>
           <p>Explore opportunities in carefully selected sectors tailored to market demands.</p>
-
+          <button onclick="openModal('modal2')">View More</button>
         </div>
         <img class="img" src="/Images/product.jpg" alt="Handpicked Sectors">
       </div>
@@ -253,12 +253,11 @@
         <div class="card-text">
           <h3>Power & Electricity</h3>
           <p>Apply effortlessly with our streamlined application process designed for your convenience.</p>
-
+          <button onclick="openModal('modal3')">View More</button>
         </div>
         <img class="img" src="/Images/product.jpg" alt="Simple Application Process">
       </div>
     </div>
-
 
 
     
@@ -267,7 +266,7 @@
         <div class="card-text">
           <h3>Information Technology</h3>
           <p>Enhance your skills with practical, on-the-job experience in your chosen field.</p>
-
+          <button onclick="openModal('modal4')">View More</button>
         </div>
         <img class="img" src="/Images/product.jpg" alt="On the Job Training">
       </div>
@@ -276,7 +275,7 @@
         <div class="card-text">
           <h3>Automotive Industry          </h3>
           <p>Explore opportunities in carefully selected sectors tailored to market demands.</p>
-
+          <button onclick="openModal('modal5')">View More</button>
         </div>
         <img class="img" src="/Images/product.jpg" alt="Handpicked Sectors">
       </div>
@@ -285,11 +284,74 @@
         <div class="card-text">
           <h3>Information Technology</h3>
           <p>Apply effortlessly with our streamlined application process designed for your convenience.</p>
-
+          <button onclick="openModal('modal6')">View More</button>
         </div>
         <img class="img" src="/Images/product.jpg" alt="Simple Application Process">
       </div>
     </div>
+
+            <!-- Modal for Product 1 -->
+  <!-- Modal for Product 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <img src="https://via.placeholder.com/400" alt="Product 2 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h2>Product 1</h2>
+      <p>This is a detailed description of Product 2. It provides a comprehensive overview of its unique features, design, and benefits. Perfect for those looking for high-quality performance and value.</p>
+  </div>
+</div>
+
+
+    <!-- Modal for Product 2 -->
+<!-- Modal for Product 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <img src="https://via.placeholder.com/400" alt="Product 2 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h2>Product 3</h2>
+      <p>This is a detailed description of Product 2. It provides a comprehensive overview of its unique features, design, and benefits. Perfect for those looking for high-quality performance and value.</p>
+  </div>
+</div>
+
+   <!-- Modal for Product 3 -->
+<!-- Modal for Product 3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <img src="https://via.placeholder.com/400" alt="Product 2 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h2>Product 3</h2>
+      <p>This is a detailed description of Product 2. It provides a comprehensive overview of its unique features, design, and benefits. Perfect for those looking for high-quality performance and value.</p>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <img src="https://via.placeholder.com/400" alt="Product 2 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h2>Product 4</h2>
+      <p>This is a detailed description of Product 2. It provides a comprehensive overview of its unique features, design, and benefits. Perfect for those looking for high-quality performance and value.</p>
+  </div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal5')">&times;</span>
+      <img src="https://via.placeholder.com/400" alt="Product 2 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h2>Product 5</h2>
+      <p>This is a detailed description of Product 2. It provides a comprehensive overview of its unique features, design, and benefits. Perfect for those looking for high-quality performance and value.</p>
+  </div>
+</div>
+
+<div id="modal6" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal6')">&times;</span>
+      <img src="https://via.placeholder.com/400" alt="Product 2 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h2>Product 6</h2>
+      <p>This is a detailed description of Product 2. It provides a comprehensive overview of its unique features, design, and benefits. Perfect for those looking for high-quality performance and value.</p>
+  </div>
+</div>
+
+
 
   </section>
 
@@ -503,7 +565,7 @@
 
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close" id="contactClose">&times;</span>
         <div class="modal-header">Contact Us</div>
         <form action="/submit_query" method="post">
           <label for="name">Name:</label>

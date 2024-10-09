@@ -3,68 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Cards with Modal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+        }
+
+        .card button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            width: 400px;
+        }
+
+        .close {
+            float: right;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
-      
-      
-      
-      
-</body>
-</html>
+
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Short description of product 1.</p>
+        <button onclick="openModal('modal1')">View More</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Short description of product 2.</p>
+        <button onclick="openModal('modal2')">View More</button>
+    </div>
+
+    <!-- Modal for Product 1 -->
+  <!-- Modal for Product 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <img src="https://via.placeholder.com/400" alt="Product 2 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h2>Product 2</h2>
+      <p>This is a detailed description of Product 2. It provides a comprehensive overview of its unique features, design, and benefits. Perfect for those looking for high-quality performance and value.</p>
+  </div>
+</div>
 
 
+    <!-- Modal for Product 2 -->
+<!-- Modal for Product 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <img src="https://via.placeholder.com/400" alt="Product 2 Image" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <h2>Product 2</h2>
+      <p>This is a detailed description of Product 2. It provides a comprehensive overview of its unique features, design, and benefits. Perfect for those looking for high-quality performance and value.</p>
+  </div>
+</div>
 
 
-      
-      
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
 
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <section id="ceo-message" style="padding: 60px 0; background-color: #f9f9f9;">
-        <div class="container" style="text-align: center;">
-          <h2 style="font-size: 32px; font-weight: bold; margin-bottom: 30px;">CEO Message</h2>
-          <div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
-            <div style="flex: 0 0 150px;">
-              <!-- Square CEO Image -->
-              <img src="/Images/ceo..png" alt="CEO" style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-            </div>
-            <div style="max-width: 600px;">
-              <div style="text-align: left; margin-bottom: 10px;">
-                <!-- Star Rating -->
-                <span style="color: #FFD700; font-size: 24px;">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
-              </div>
-              <p style="font-size: 18px; line-height: 1.6; text-align: left;">
-                At Aone Recruitment Agency, our mission is to connect businesses with the talent they need to thrive. We strive to empower both individuals and organizations through our comprehensive recruitment solutions. Together, we are building a future where opportunities are accessible to all.
-                <br><br>
-                Our team is dedicated to understanding the unique needs of every client and candidate, ensuring that we provide tailored recruitment services that foster success.
-                <br><br>
-                <strong>John Doe</strong><br>
-                CEO, Aone Recruitment Agency
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
-      
+        // Close modal if clicked outside of the modal content
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>

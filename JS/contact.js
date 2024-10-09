@@ -5,7 +5,7 @@
   var contactUsBtn = document.getElementById("contactUsBtn");
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+  var span = document.getElementById("contactClose");
 
   // When the user clicks the button, open the modal 
   contactUsBtn.onclick = function() {
