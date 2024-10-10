@@ -61,12 +61,14 @@
 
 .card button{
     background: brown;
-    /* background: none; */
+
     color: white;
     font: bold;
-    /* margin-top: 20%; */
     margin-bottom: 5%;
-    padding: 5px;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+
 }
 
 
