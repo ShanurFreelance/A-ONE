@@ -1,9 +1,13 @@
-
+.home{
+  position: relative;
+  top: 60px;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
+
 ;
 }
 .mySlides{
