@@ -30,34 +30,45 @@
           <div class="dropdown">
             <div class="dropbtn">Our Servies</div>
             <div class="dropdown-content">
-              <a href="#">Service 1</a>
-              <a href="#">Service 1</a>
-              <a href="#">Service 1</a>
-              <a href="#">Service 1</a>
-              <a href="#">Service 1</a>
-
+              <a href="#our-services">SOURCING & PLACEMENT </a>
+              <a href="#our-services">LOGISTIC SUPPORT</a>
+              <a href="#our-services">PROMETRIC EXAM</a>
+              <a href="#our-services">DOCUMENTS ATTESTATION</a>
+              <a href="#our-services">VISA PROCESSING</a>
+              <a href="#our-services">Ticketing</a>
+              
             </div>
         </li>
         <li>
           <div class="dropdown">
             <div class="dropbtn">Our Products</div>
             <div class="dropdown-content">
-              <a href="#">Service 1</a>
-              <a href="#">Service 1</a>
-              <a href="#">Service 1</a>
-              <a href="#">Service 1</a>
-              <a href="#">Service 1</a>
+              <a href="#products">Healthcare Sector</a>
+              <a href="#products">Construction Industry</a>
+              <a href="#products">Power & Electricity</a>
+              <a href="#products">Information Technology</a>
+              <a href="#products">Petrochemicals & Refinery</a>
+              <a href="#products">Automotive Industry</a>
 
             </div>
         </li>
-        <li><a href="#about-us">About us</a></li>
+        <li>
+          <div class="dropdown aboutus">
+            <div class="dropbtn">About us</div>
+            <div class="dropdown-content">
+              <a href="#about-us">Vision</a>
+              <a href="#about-us">Mission</a>
+              <a href="#about-us">Values</a>
+              
+            </div>
+        </li>
         <li><a href="#ceo-message">CEO Message</a></li>
         <li><a href="#notices">Notices</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="submit-btn">
-      <a href="#" class="btn">Submit Profile</a>
+      <button onclick="sendEmail()" class="btn">Submit Profile</button>
     </div>
   </header>
   <!-- *************************Navbar End**************************************************** -->
@@ -85,7 +96,7 @@
       <div class="title">
         <h1>Aone -Recruitment Agency</h1>
         <p>Finding Sectors</p>
-        <a href="#about">About us</a>
+        <a href="#about-us">About us</a>
       </div>
     </div>
     <br>
@@ -287,7 +298,7 @@
 
 
   </section>
-  <!-- ***********************************Our Services End********************************************* -->
+  <!-- ***********************************Our Services End*****************************products**************** -->
 
 
 
@@ -439,7 +450,7 @@
 
   <section id="about-us" style="padding: 60px 0; background-color: #fff;">
     <div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
-      <h2 style="font-size: 32px; font-weight: bold; margin-bottom: 30px;">About us</h2>
+      <h2 style="font-size: 32px; font-weight: bold; ">About us</h2>
 
 
 
@@ -477,7 +488,7 @@
         </div>
       </div>
 
-      <p style="font-size: 18px; line-height: 1.8; text-align: center;">
+      <p style="font-size: 18px; line-height: 1.8; text-align: center;padding-top: 20px;">
         Our office is situated at a prime location in the capital city New Delhi which is easily accessible from
         the international airport, near five-star hotel (The Suryaa), various government departments,
         foreign embassies & consulates, airlines, and well-known logistic support providers. Our office is
@@ -496,18 +507,30 @@
   <section id="ceo-message" style="padding: 60px 0; background-color: #f9f9f9;">
     <div class="container" style="text-align: center;">
       <h2 style="font-size: 32px; font-weight: bold; margin-bottom: 30px;">CEO Message</h2>
-      <div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
-        <div style="flex: 0 0 150px;">
-          <!-- Square CEO Image -->
-          <img src="/Images/ceo..png" alt="CEO"
-            style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-        </div>
-        <div style="max-width: 800px;">
-          <div style="text-align: left; margin-bottom: 10px;">
-            <!-- Star Rating -->
-            <span style="color: #FFD700; font-size: 24px;">&#9733; &#9733; &#9733; &#9733; &#9733;</span>
+
+      <div style=" font-size: 15px;
+      line-height: 1.6;
+      text-align: center;
+      border: 4px groove crimson;
+      padding: 50px;
+      background: #260a0829;
+      border-radius: 130px;
+      color: bla2;
+      font-family: cursive;
+      box-shadow: 1px 2px 10px 4px #a81a359c;
+      width: 80vw;
+      margin: auto;">
+       
+
+       
+           <div style="padding-bottom:25px;">
+            <!-- Square CEO Image -->
+            <img src="/Images/ceo..png" style="    border: 7px groove crimson;
+            width: 250px;
+            height: 250px;
+            border-radius: 250px;" alt="CEO"/>
+             
           </div>
-          <p style="font-size: 18px; line-height: 1.6; text-align: left;">
             A-one Foreign Services (AFS) is a dream company of the owner who had worked in the office of
             Saudi Ministry of Health based at New Delhi under the auspices of Royal Embassy of Saudi
             Arabia in India for more than 26 years on various responsible administrative posts. He has been
@@ -762,6 +785,11 @@
   <script src="/JS/noticeboard.js"></script>
   <script src="/JS/contact.js"></script>
   <script src="/JS/form.js"></script>
+  <script>
+    function sendEmail() {
+        window.location.href = "someone@example.com?subject=Subject%20Here&body=Message%20content%20here";
+    }
+</script>
 
 </body>
 

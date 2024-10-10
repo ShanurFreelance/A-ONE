@@ -23,7 +23,7 @@ header {
 
 
 .logo img {
-    width: 100px;
+    width: 130px;
     height: 50px;
 }
 
@@ -40,10 +40,10 @@ nav ul li a {
     padding: 10px;
 }
 
-nav ul li a.active {
+/* nav ul li a.active {
     border-bottom: 3px solid #5e4031;
     color: #5e4031;
-}
+} */
 
 
 .submit-btn .btn {
@@ -71,10 +71,13 @@ nav ul li a.active {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #5e4031f1;
-    min-width: 160px;
+    background-color: #181311a1;
+    min-width: 260px;
     box-shadow: 1px 1px 3px 1px #ad430ecb;
     z-index: 1;
+  }
+  .aboutus  .dropdown-content{
+    min-width: 160px;
   }
   
   /* Links inside the dropdown */
@@ -87,8 +90,8 @@ nav ul li a.active {
   
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
-      background-color: rgba(255, 255, 255, 0.575);
-      color: #5e4031;
+      background-color: rgba(14, 3, 3, 0.5);
+      color: #ece3de;
 }
   
   /* Show the dropdown menu on hover */
