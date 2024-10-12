@@ -12,7 +12,7 @@ table {
 }
 
 table thead tr {
-    background-color: #5e4031;
+    background-color: #660000;
     color: #ffffff;
     text-align: left;
 }
@@ -46,7 +46,7 @@ table tbody tr:nth-of-type(odd) {
 
 .view-more-btn {
     display: block;
-    background-color: #5e4031;
+    background-color: #660000;
     color: white;
     text-align: center;
     padding: 10px;

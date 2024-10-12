@@ -49,10 +49,11 @@
   text-decoration: none;
   color: white;
   display: block;
-  padding: 15px 25px ;
-  background-color: #5e4031;
+  padding: 15px 45px ;
+  background-color: #660000;
   margin-top: 20px;
-  border-radius: 3px;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 

@@ -48,15 +48,16 @@ nav ul li a {
 
 .submit-btn .btn {
     text-decoration: none;
-    background-color: #007bff;
+    background-color: #660000;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
+    border: none;
 }
 
 .submit-btn .btn:hover {
-    background-color: #0056b3;
+    background-color: #660000;
 }
 
 
@@ -73,7 +74,7 @@ nav ul li a {
     position: absolute;
     background-color: #181311a1;
     min-width: 260px;
-    box-shadow: 1px 1px 3px 1px #ad430ecb;
+    box-shadow: 6px 6px 10px  #660000;
     z-index: 1;
   }
   .aboutus  .dropdown-content{

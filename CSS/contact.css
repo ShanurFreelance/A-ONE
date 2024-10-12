@@ -5,7 +5,7 @@
 }
 .contact-button {
     padding: 10px 20px;
-    background-color: #5e4031;
+    background-color: #660000;
     color: white;
     border: none;
     cursor: pointer;
@@ -13,7 +13,7 @@
     font-size: 16px;
 }
 .contact-button:hover {
-    background-color: #5e4031;
+    background-color: #660000;
 }
 /* The Modal (background) */
 .modal {
@@ -63,7 +63,7 @@ textarea {
     resize: vertical;
 }
 input[type="submit"] {
-    background-color: #5e4031;
+    background-color: #660000;
     color: white;
     padding: 10px 15px;
     margin-top: 20px;
@@ -73,7 +73,7 @@ input[type="submit"] {
     width: 100%;
 }
 input[type="submit"]:hover {
-    background-color: #5e4031;
+    background-color: #660000;
 }
 /* close2 Button */
 .close {
@@ -97,7 +97,7 @@ input[type="submit"]:hover {
     padding-top: 60px;
 }
 .message-block .message{
-    color: #5e4031;
+    color: #660000;
     font-size: 50px;
 }
 .message-block div{
