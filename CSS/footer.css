@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -18,7 +19,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 20px;
     border-bottom: 1px solid #e0e0e0;
@@ -125,4 +125,10 @@ footer {
 
 .social-icons img {
     width: 24px;
+}
+
+@media (max-width: 700px) {
+    .footer-container{
+        flex-direction: column;
+    }
 }

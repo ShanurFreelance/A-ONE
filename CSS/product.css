@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    max-height: 40vh;
+
     
 }
 
@@ -42,8 +42,7 @@
 
 }
 .card-text {
-    height:  100 px;
-    /* width: 100px; */
+    position: relative;
 }
 
 .card h3 {
@@ -56,6 +55,7 @@
     font-size: 15px;
     color: #666;
     line-height: 1.5;
+    height: 150px;
 
 }
 
@@ -68,6 +68,9 @@
     cursor: pointer;
     border: 1px solid red;
     border-radius: 20px;
+    position: absolute;
+    bottom: 2px;
+
 
 }
 
