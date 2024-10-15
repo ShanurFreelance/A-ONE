@@ -1,8 +1,10 @@
+/* Existing CSS */
 .container {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .contact-button {
     padding: 10px 20px;
     background-color: #660000;
@@ -12,10 +14,11 @@
     border-radius: 5px;
     font-size: 16px;
 }
+
 .contact-button:hover {
     background-color: #660000;
 }
-/* The Modal (background) */
+
 .modal {
     display: none;
     position: fixed;
@@ -25,11 +28,10 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
 }
-/* Modal Content */
+
 .modal-content {
     background-color: white;
     margin: 5% auto;
@@ -40,17 +42,20 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .modal-header {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 label {
     display: block;
     margin-top: 10px;
     font-size: 14px;
 }
+
 input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 10px;
@@ -59,9 +64,11 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 textarea {
     resize: vertical;
 }
+
 input[type="submit"] {
     background-color: #660000;
     color: white;
@@ -72,16 +79,18 @@ input[type="submit"] {
     cursor: pointer;
     width: 100%;
 }
+
 input[type="submit"]:hover {
     background-color: #660000;
 }
-/* close2 Button */
+
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
     color: black;
@@ -96,11 +105,59 @@ input[type="submit"]:hover {
     flex-direction: column;
     padding-top: 60px;
 }
+
 .message-block .message{
     color: #660000;
     font-size: 50px;
 }
+
 .message-block div{
     color: gray;
     padding-top: 30px;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Increase width for smaller screens */
+    }
+
+    .message-block .message {
+        font-size: 40px; /* Reduce font size for smaller screens */
+    }
+
+    .modal-header {
+        font-size: 18px; /* Adjust header font size for smaller screens */
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+
+    input[type="submit"] {
+        padding: 8px 10px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%; /* Full width for very small screens */
+    }
+
+    .message-block .message {
+        font-size: 35px; /* Further reduce font size */
+    }
+
+    .modal-header {
+        font-size: 16px; /* Further reduce header font size */
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        padding: 6px; /* Further reduce padding */
+    }
+
+    input[type="submit"] {
+        padding: 6px 8px; /* Further adjust button padding */
+    }
 }
