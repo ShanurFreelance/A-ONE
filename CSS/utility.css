@@ -41,3 +41,19 @@
    
 
 }
+
+#ceo-message .container .main img  {
+    border: 7px groove #660000;
+     width: 250px;
+              height: 250px;
+              border-radius: 250px;
+}
+@media (max-width:400px){
+    #ceo-message .container .main img{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50vw;
+    }
+   
+
+}
