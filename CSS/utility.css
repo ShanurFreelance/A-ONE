@@ -20,34 +20,31 @@
     padding: 50px;
     background: #260a0829;
     border-radius: 130px;
-    color: bla2;
+
     font-family: cursive;
     box-shadow: 15px 15px 20px  #660000b4;
     width: 80vw;
     margin: auto;
 }
 
-#ceo-message .container .main img{
-    width: 200px;
-    height: 200px;
-    border-radius: 200px;
-    border: 2px groove #660000b4;
-}
 
+
+#ceo-message .container .main img  {
+             border: 7px groove #660000;
+             width: 250px;
+              height: 250px;
+              border-radius: 250px;
+}
 @media (max-width:500px){
     #ceo-message .container .main{
-        scale: .7;
+        width: 90vw;
+        border-radius: 15vw;
+        padding: 10px;
     }
    
 
 }
 
-#ceo-message .container .main img  {
-    border: 7px groove #660000;
-     width: 250px;
-              height: 250px;
-              border-radius: 250px;
-}
 @media (max-width:400px){
     #ceo-message .container .main img{
     width: 50vw;
