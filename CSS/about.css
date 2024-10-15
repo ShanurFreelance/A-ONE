@@ -15,11 +15,11 @@
 
 .rotated-card {
     width: 360px;
-    background:#729c9c78;
-    color: #fff;
+    background: #e5e5e5;
+    color: #660000;
     padding: 20px;
     text-align: center;
-    border-radius: 10px;
+    text-size-adjust: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
     
