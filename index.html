@@ -84,71 +84,46 @@
   <!-- ************************Home Section Start************************************************* -->
   <section id="home">
     <!-- Slideshow container -->
-    <div class="slideshow-container ">
-
-      <!-- Full-width images with number and caption text -->
+    <div class="slideshow-container">
+  
+      <!-- First slide -->
       <div class="mySlides fade">
-        <img src="/Images/Crousel/14.webp">
-
+        <img src="/Images/Crousel/1.webp" alt="Recruitment Image 1">
+        <div class="title">
+          <h1>A-ONE Foreign Service</h1>
+          <a href="#about-us">About us</a>
+        </div>
       </div>
-
+  
+      <!-- Second slide -->
       <div class="mySlides fade">
-        <img src="/Images/Crousel/11.webp">
-
+        <img src="/Images/Crousel/2.webp" alt="Recruitment Image 2">
+        <div class="title">
+          <h1>A-ONE Foreign Service</h1>
+          <a href="#our-services">Our Services</a>
+        </div>
       </div>
-
+  
+      <!-- Third slide -->
       <div class="mySlides fade">
-        <img src="/Images/Crousel/3.webp">
-
+        <img src="/Images/Crousel/3.webp" alt="Recruitment Image 3">
+        <div class="title">
+          <h1>A-ONE Foreign Service</h1>
+          <a href="#products">Our Sectors</a>
+        </div>
       </div>
-
-      <div class="mySlides fade">
-        <img src="/Images/Crousel/4.webp">
-      </div>
-
-      <div class="mySlides fade">
-        <img src="/Images/Crousel/5.webp">
-
-      </div>
-      <div class="mySlides fade">
-        <img src="/Images/Crousel/6.webp">
-
-      </div>
-      <div class="mySlides fade">
-        <img src="/Images/Crousel/7.webp">
-
-      </div>
-      <div class="mySlides fade">
-        <img src="/Images/Crousel/8.webp">
-
-      </div>
-      <div class="mySlides fade">
-        <img src="/Images/Crousel/9.webp">
-
-      </div>
-
-      <div class="title">
-        <h1>Aone -Recruitment Agency</h1>
-        <!-- <p>Finding Sectors</p> -->
-        <a href="#about-us">About us</a>
-      </div>
+  
     </div>
-    <br>
-
   </section>
+  
 
   <!-- ************************Home Section ENd************************************************* -->
 
 
-
-
-
-
-
   <!-- *******************************Our Services Start****************************************** -->
 
-  <section id="our-services" style="padding: 60px 0; background-color: #fff;">
-    <h1 class="heading">Our Service</h1>
+  <section id="our-services" style="padding: 60px 100px; background-color: #fff;">
+    <h1 class="heading" style="padding: 50px 10px;">Our Service</h1>
 
     <div class="cards">
       <div class="card">
@@ -708,30 +683,57 @@
   <section id="contact" class="contactus">
 
     <div class="message-block">
-      <h2 class="message">Leave Us A Message</h2>
+      <h2 class="message">Leave Your Grievances</h2>
       <div>We're here to find your dream job. Fill in your details and our team will gwt back to you promptly. </div>
     </div>
     <div class="container">
       <!-- Button to open the modal -->
-      <button class="contact-button" id="contactUsBtn">Contact</button>
+      <button class="contact-button" id="contactUsBtn">Grievance</button>
     </div>
-
     <!-- The Modal -->
     <div id="contactModal" class="modal">
 
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close" id="contactClose">&times;</span>
-        <div class="modal-header">Contact Us</div>
+        <div class="modal-header">User Grievances</div>
         <form method="POST" action="" name="google-sheet">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="Name" placeholder="Your full name" required>
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" id="name" name="Name" placeholder="Name*" required>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="Email" placeholder="Your email" required>
+          <!-- <label for="email">Email:</label> -->
+          <input type="email" id="email" name="Email" placeholder="Email*" required>
+          
+          <!-- <label for="name">Passport Number:</label> -->
+          <input type="text" id="passport_number" name="Paasport_Number" placeholder="Passport Number*" required>
 
-          <label for="query">Query:</label>
-          <textarea id="query" name="Query" rows="4" placeholder="Your query or message" required></textarea>
+           <!-- new -->
+          <!-- <label for="name">Moblie Number:</label> -->
+          <input type="text" id="mobile_no" name="Moblile Number" placeholder="Moblie Number*" required>
+
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" id="name" name="Employer's Name" placeholder="Employer's Name" required>
+
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" id="name" name="Joining Date" placeholder="Date of Joining*" required>
+
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" id="name" name="Employees_ID" placeholder="Employees ID*" required>
+
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" id="name" name="Position Number" placeholder="Position No" required>
+
+          <!-- <label for="query">Passport Number:</label> -->
+          <textarea id="text" name="Nature of Commplaint" rows="4" placeholder="Nature Of Complaint"></textarea> 
+        
+
+
+          
+
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" id="name" name="Country Name" placeholder="Country Name" required>
+
+
 
           <input type="submit" value="Submit"name="submit">
         </form>
