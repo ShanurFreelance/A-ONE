@@ -8,7 +8,7 @@
 .ceo-message {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color:#d0cccc33;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -21,8 +21,8 @@
 }
 
 .ceo-image img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
 }
 
